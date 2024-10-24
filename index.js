@@ -95,7 +95,8 @@ let ucetambolunenler=[],
   ucebolunenlerintoplami=0,
   besyuzdenkucuksayilar=[],
   siralisayilar=[],
-  tekraredensayilar;
+  tekraredensayilar=[],
+  tekraredensayilarnesne={};
 
 // 3a çözümü
 enkucuk=sayilar[0]
@@ -131,7 +132,17 @@ siralisayilar=besyuzdenkucuksayilar.sort((a,b) => a-b)
 
 // 3f çözümü
 
-/* kodlar buraya */
+sayilar.forEach(sayi=> {
+  if (tekraredensayilarnesne[sayi]===undefined) {
+      tekraredensayilarnesne[sayi]=1;
+  } else {
+      tekraredensayilarnesne[sayi]++;
+  }})
+
+for (const sayi in tekraredensayilarnesne) {
+  tekraredensayilar.push(`${sayi} sayısı ${tekraredensayilarnesne[sayi]} tekrar edilmiştir`
+)}
+
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
