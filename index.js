@@ -92,7 +92,7 @@ function CemberinAlani(r) {
 let ucetambolunenler=[],
   enkucuk,
   enbuyuk,
-  ucebolunenlerintoplami,
+  ucebolunenlerintoplami=0,
   besyuzdenkucuksayilar,
   siralisayilar,
   tekraredensayilar;
@@ -119,7 +119,7 @@ sayilar.forEach((sayi) => {if (sayi%3===0)
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami=ucetambolunenler.reduce((sayi,ekle) =>sayi+ekle,0)
 
 // 3d çözümü
 
