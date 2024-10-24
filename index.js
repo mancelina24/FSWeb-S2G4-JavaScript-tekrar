@@ -98,8 +98,18 @@ let ucetambolunenler,
   tekraredensayilar;
 
 // 3a çözümü
+enkucuk=sayilar[0]
+enbuyuk=sayilar[0]
 
-/* kodlar buraya */
+for (let i=0; i<sayilar.length;i++)
+  if (enkucuk>sayilar[i]) {
+    enkucuk=sayilar[i]
+  }
+  for (let i=0; i<sayilar.length;i++)
+    if (enbuyuk<sayilar[i]) {
+      enbuyuk=sayilar[i]
+    }
+
 
 // 3b çözümü:
 
