@@ -38,7 +38,9 @@ const sayilar = [
 //Örneğin çözümü:
 function KareninAlani(kenaruzunlugu) {
   return kenaruzunlugu * kenaruzunlugu;
+
 }
+
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -140,9 +142,10 @@ sayilar.forEach(sayi=> {
   }})
 
 for (const sayi in tekraredensayilarnesne) {
+  if (tekraredensayilarnesne[sayi]>1) {
   tekraredensayilar.push(`${sayi} sayısı ${tekraredensayilarnesne[sayi]} tekrar edilmiştir`
-)}
-
+)}}
+console.log(tekraredensayilar)
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
